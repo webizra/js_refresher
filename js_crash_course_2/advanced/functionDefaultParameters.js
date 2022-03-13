@@ -16,3 +16,5 @@ const calculatePayment = (annualSalary, bonus = {
        return annualSalary + bonus.teamBonus + bonus.employeeBonus
     }
     console.log(calculatePayment(720000, {teamBonus: 20000, employeeBonus: 3000}))
+
+    

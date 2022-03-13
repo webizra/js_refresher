@@ -8,6 +8,14 @@ fulfilled: meaning that the operation completed successfully
 rejected: meaning that the operation failed
 */
 
+// the callback stack
+function greet(who){
+    console.log("hello " + who)
+}
+greet("tochi")
+console.log("ok bye")
+
+
 // CREATING PROMISES
 /* const promise = new Promise((resolve, reject) => {
     setTimeout(() =>{
@@ -26,7 +34,7 @@ promise.then((res) => {
 }) */
 
 // PROMISES WITH THE FETCH API
-const getRandomUsers = (users) => {
+/* const getRandomUsers = (users) => {
     const fetchRandomUsers = fetch(`https://randomuser.me/api/?results=${users}`)
     fetchRandomUsers.then((data)=>{
         data.json().then((randomUsers)=>{
@@ -38,4 +46,4 @@ const getRandomUsers = (users) => {
         })
     })
 }
-getRandomUsers(10)
+getRandomUsers(10) */
